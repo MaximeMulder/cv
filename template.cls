@@ -97,7 +97,7 @@
     \@cvname
     \vspace*{5pt}
   }
-  
+
   \vspace{4pt}
   \begin{itemize}[leftmargin=\margininfo,itemsep=0pt,label={}]
     \item \faEnvelope \hspace{1pt} \@cvemail
@@ -137,12 +137,20 @@
     {\begin{itemize}[leftmargin=\marginside,label={}]}
     {\end{itemize}}
 
+\newenvironment{referees}
+    {\begin{itemize}[leftmargin=\marginside,label={}]}
+    {\end{itemize}}
+
 \newenvironment{programminglanguages}
     {\begin{itemize}[leftmargin=\marginside,label={}]}
     {\end{itemize}}
 
 \newenvironment{naturallanguages}
     {\begin{itemize}[leftmargin=\marginside,label={}]}
+    {\end{itemize}}
+
+\newenvironment{projects}
+    {\begin{itemize}[leftmargin=\marginmain,rightmargin=\marginmain,label={}]}
     {\end{itemize}}
 
 \newenvironment{degrees}
@@ -163,9 +171,13 @@
 
 \newcommand*{\interest}[1]{\item #1}
 
+\newcommand*{\referee}[2]{\item #1 \\ {\small #2}}
+
 \newcommand*{\programminglanguage}[2]{\item \textbf{#1} \\ #2}
 
 \newcommand*{\naturallanguage}[2]{\item \textbf{#1} \\ #2}
+
+\newcommand{\project}[2]{\item \href{#2}{\textbf{#1 \hspace{1pt} {\small \faExternalLink}}}}
 
 \newcommand{\degree}[4]{\item \textbf{#1} \hfill {\small #2} \\ #3 \\ \vspace{5pt} {\small #4}}
 
@@ -179,7 +191,7 @@
 
 \AtBeginDocument{
   \pagestyle{empty}
-  \thispagestyle{empty}  
+  \thispagestyle{empty}
   \setlength{\columnsep}{30pt}
   \columnratio{0.3,0.7}
   \raggedright
