@@ -141,6 +141,10 @@
     {\begin{itemize}[leftmargin=\marginside,label={}]}
     {\end{itemize}}
 
+\newenvironment{assets}
+    {\begin{itemize}[leftmargin=\marginside,label={}]}
+    {\end{itemize}}
+
 \newenvironment{programminglanguages}
     {\begin{itemize}[leftmargin=\marginside,label={}]}
     {\end{itemize}}
@@ -161,6 +165,10 @@
     {\begin{itemize}[leftmargin=\marginmain,rightmargin=\marginmain,label={}]}
     {\end{itemize}}
 
+\newenvironment{skills}
+	{\begin{itemize}[leftmargin=\marginmain,rightmargin=\marginmain,label={}]}
+	{\end{itemize}}
+
 \newenvironment{jobs}
     {\begin{itemize}[leftmargin=\marginmain,rightmargin=\marginmain,label={}]}
     {\end{itemize}}
@@ -170,6 +178,8 @@
   {\endtabularx}
 
 \newcommand*{\interest}[1]{\item #1}
+
+\newcommand*{\asset}[1]{\item #1}
 
 \newcommand*{\referee}[2]{\item #1 \\ {\small #2}}
 
@@ -184,6 +194,8 @@
 \newcommand{\publication}[2]{\item \textit{``#1''} \\ {\small #2}}
 
 \newcommand{\job}[4]{\item \textbf{#1} \hfill {\small #2} \\ #3 \\ \vspace{5pt} {\small #4}}
+
+\newcommand{\skill}[2]{\item {\small \textbf{#1} \\ #2}}
 
 \newcommand{\info}[2]{#1 & #2 \\}
 
