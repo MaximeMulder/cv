@@ -187,7 +187,7 @@
 
 \newcommand*{\naturallanguage}[2]{\item \textbf{#1} \\ #2}
 
-\newcommand{\project}[2]{\item \href{#2}{\textbf{#1 \hspace{1pt} {\small \faExternalLink}}}}
+\newcommand{\project}[3]{\item \href{#2}{\textbf{#1 \hspace{1pt} {\small \faExternalLink}}} \\ #3}
 
 \newcommand{\degree}[4]{\item \textbf{#1} \hfill {\small #2} \\ #3 \\ \vspace{5pt} {\small #4}}
 
@@ -197,7 +197,7 @@
 
 \newcommand{\skill}[2]{\item {\small \textbf{#1} \\ #2}}
 
-\newcommand{\info}[2]{#1 & #2 \\}
+\newcommand{\info}[2]{#1 & \makecell[Xt]{#2} \\}
 
 % Structure commands
 

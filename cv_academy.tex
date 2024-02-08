@@ -1,8 +1,10 @@
 \documentclass[letterpaper]{template}
 
+\usepackage{makecell}
+
 \cvname{Maxime Mulder}
 \cvemail{maxime-mulder@outlook.com}
-\cvphone{(514) 249-8171}
+\cvphone{+1 (514) 249-8171}
 \cvgithub{MaximeMulder}
 \cvlinkedin{maxime-mulder}
 
@@ -13,10 +15,9 @@
 \section{Interests}
 
 \begin{interests}
-  \interest{Programming languages}
-  \interest{Type systems}
-  \interest{Compilers}
-  \interest{Systems programming}
+  \interest{Programming language theory and implementation}
+  \interest{Type systems, subtyping, type inference, parallelism, memory management}
+  \interest{Functional and imperative programming}
 \end{interests}
 
 \section{Referees}
@@ -27,12 +28,16 @@
   \referee{Wessam Ajib}{ajib.wessam@uqam.ca}
 \end{referees}
 
-\section{Programming languages}
+\section{Personal projects}
 
-\begin{programminglanguages}
-  \programminglanguage{Imperative}{Rust, C, C++, Java, Python, Javascript...}
-  \programminglanguage{Functional}{Haskell, OCaml}
-\end{programminglanguages}
+\begin{projects}
+  \project{Clam}
+  	{https://github.com/MaximeMulder/clam}
+  	{Statically typed functional programming language written in OCaml}
+  \project{Lif}
+  	{https://github.com/MaximeMulder/lif}
+  	{Dynamically typed object-oriented programming language written in Rust}
+\end{projects}
 
 \section{Languages}
 
@@ -41,88 +46,94 @@
   \naturallanguage{English}{Fluent}
 \end{naturallanguages}
 
-\section{Interpreters}
-
-\begin{projects}
-  \project{Clam}{https://github.com/MaximeMulder/clam}
-  \project{Lif}{https://github.com/MaximeMulder/lif}
-\end{projects}
-
 \switch
-
-\section{Introduction}
-
-\introduction{After completing software engineering studies in France and continuing an academic exchange to obtain a computer science master's degree in Canada, I am now looking for a PhD in programming language research.}
 
 \section{Education}
 
 \begin{degrees}
-  \degree{Computer Science Master}
+  \degree{Computer Science Master's Degree}
     {2021-2023}
     {Université du Québec à Montréal}
     {
       \begin{infos}
         \info{CGPA}{4.23/4.3}
-        \info{Notable courses}{Compilers, virtual machines, data structures, cybersecurity}
+        \info{Thesis}{\textit{``Énumérations évoluées pour langages à objets''} \\ (Advanced enumerations for object-oriented languages)}
+        \info{Supervisor}{Étienne M. Gagnon}
       \end{infos}
     }
-  \degree{Software Engineering Degree}
+  \degree{Software Engineering Master's Degree}
     {2016-2021}
     {CESI Engineering School, France}
     {
       \begin{infos}
+        \info{CGPA}{4.15/5}
         \info{Specialization}{Software development}
-        \info{Notable courses}{Software, web, operating systems, robotics, databases}
       \end{infos}
     }
 \end{degrees}
 
-\section{Thesis and papers}
-
-\begin{publications}
-  \publication{Énumérations évoluées pour langages à objets}{Master's thesis based on a subject by my supervisor Étienne M. Gagnon}
-  \publication{Advanced enumerations for object-oriented languages}{English summary of my master's thesis (not published yet)}
-\end{publications}
-
-\section{Experience}
+\section{Research experience}
 
 \begin{jobs}
   \job{Research assistant}
-    {Summer 2022 and April 2023}
+    {April 2023}
     {Université du Québec à Montréal}
     {
       \begin{infos}
+        \info{Mission}{Translation and summarization of my thesis into an academic paper format}
         \info{Supervisor}{Étienne M. Gagnon}
-        \info{First mission}{Work on my thesis' research}
-        \info{Second mission}{Translation of my thesis in an academic paper format}
       \end{infos}
     }
+  \job{Research assistant}
+    {Summer 2022}
+    {Université du Québec à Montréal}
+    {
+      \begin{infos}
+        \info{Mission}{Work on my thesis research and development of an object-oriented interpreter in Java}
+        \info{Supervisor}{Étienne M. Gagnon}
+      \end{infos}
+    }
+\end{jobs}
+
+\section{Teaching experience}
+
+\begin{jobs}
   \job{Teaching assistant}
     {Winter 2022}
     {Université du Québec à Montréal}
     {
       \begin{infos}
         \info{Course}{Programming language creation (INF600E)}
-        \info{Mission}{Supervision of the lab sessions for this course}
-        \info{Subjects}{Parsing, typing, evaluation, implementation...}
+        \info{Subjects}{Parsing, type checking, evaluation, implementation...}
+      \end{infos}
+    }
+\end{jobs}
+
+\section{Professional experience}
+
+\begin{jobs}
+  \job{IT Software developer}
+    {January 2024 - Present}
+    {McGill University / Montreal Neurological Institute}
+    {
+      \begin{infos}
+        \info{Mission}{Deployment of an appropriate infrastructure to connect the Brain Imaging Center to the CBIG open science repository \\ Development on the LORIS open source research software to better fit this project}
       \end{infos}
     }
   \job{Full stack developer}
-    {January to December 2019}
+    {January - December 2019}
     {Digisoft, France}
     {
       \begin{infos}
-        \info{Status}{Internship \& Freelance}
-        \info{Mission}{Lead development, deployment and maintenance of an internal ERP software}
+        \info{Mission}{Development, deployment and maintenance of an internal ERP software}
         \info{Technologies}{Typescript, PHP, React, Laravel, MySQL database, Debian servers}
       \end{infos}
     }
   \job{Software developer}
-    {April to June 2018}
+    {April - June 2018}
     {Alstom, France}
     {
       \begin{infos}
-        \info{Status}{Internship}
         \info{Mission}{Development of an internal electrical modeling software}
         \info{Technologies}{C++ and Qt library}
       \end{infos}
