@@ -8,6 +8,7 @@
 \RequirePackage{fontawesome}
 \RequirePackage{geometry}
 \RequirePackage[hidelinks]{hyperref}
+\RequirePackage{makecell}
 \RequirePackage{paracol}
 \RequirePackage{ragged2e}
 \RequirePackage{setspace}
@@ -101,7 +102,7 @@
   \vspace{4pt}
   \begin{itemize}[leftmargin=\margininfo,itemsep=0pt,label={}]
     \item \faEnvelope \hspace{1pt} \@cvemail
-    \item \faPhoneSquare \hspace{1pt} \@cvphone
+    % \item \faPhoneSquare \hspace{1pt} \@cvphone
     \item \href{https://github.com/\@cvgithub}{\faGithub \hspace{1pt} \@cvgithub}
     \item \href{https://linkedin.com/in/\@cvlinkedin}{\faLinkedin \hspace{1pt} \@cvlinkedin}
   \end{itemize}
